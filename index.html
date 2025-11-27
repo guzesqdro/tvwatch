@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <title>Ver Video</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <style>
     body { 
       text-align: center;
       background: #000;
       color: #fff;
-      font-family: sans-serif;
       padding: 10px;
+      font-family: Arial;
     }
     video {
       width: 100%;
@@ -20,11 +20,10 @@
   </style>
 </head>
 <body>
-  <h3>🎬 Reproductor Watch</h3>
+  <h3>🎬 Video desde GitHub</h3>
   <video controls preload="metadata" playsinline>
-    <source src="video.mp4" type="video/mp4">
-    Tu dispositivo no soporta este video.
+    <source src="https://raw.githubusercontent.com/guzesqdro/tvwatch/main/video.mp4" type="video/mp4">
+    No soporta este video.
   </video>
-  <p>Si no carga, reduce peso/resolución o usa H.264.</p>
 </body>
 </html>
