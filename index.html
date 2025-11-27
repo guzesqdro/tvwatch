@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Ver mi video</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Ver Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    body { 
       text-align: center;
-      background-color: #111;
-      color: white;
-      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
       padding: 10px;
-    }
-    .container {
-      max-width: 300px;
-      margin: auto;
     }
     video {
       width: 100%;
-      border-radius: 10px;
-    }
-    h1 {
-      font-size: 18px;
-      margin-bottom: 10px;
+      max-width: 300px;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🎬 TVWatch</h1>
-    <video controls>
-      <source src="video.mp4" type="video/mp4">
-      Tu Apple Watch no soporta este video.
-    </video>
-    <p>Made by: guzesqdro 🥳</p>
-  </div>
+  <h3>🎬 Reproductor Watch</h3>
+  <video controls preload="metadata" playsinline>
+    <source src="video.mp4" type="video/mp4">
+    Tu dispositivo no soporta este video.
+  </video>
+  <p>Si no carga, reduce peso/resolución o usa H.264.</p>
 </body>
 </html>
